@@ -18,7 +18,7 @@ for (dims in c(2)){
     )
     opt <- parse_args(OptionParser(option_list = option_list))
   
-    # Set up parameters
+    # Set up parameters  
     model <- opt$model
     d <- opt$dimension
     N <- opt$sample.size

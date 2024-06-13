@@ -51,7 +51,7 @@ for (dims in c(500)){
       make_option(c("-t", "--theta"), action = "store", default = "dense", type = "character",
                   help = "type of true theta"),
       make_option(c("-n", "--sample.size"), action = "store", default = 5e3, type = 'numeric', # 1e5
-                  help = "total sample size")
+                  help = "total sample size")  
     )
     opt <- parse_args(OptionParser(option_list=option_list))
     opt$theta <- 'null'

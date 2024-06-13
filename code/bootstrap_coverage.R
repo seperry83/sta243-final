@@ -14,7 +14,7 @@ for (dims in c(2)){
     make_option(c("-t", "--theta"), action = "store", default = "null", type = 'character',
                 help = "type of true theta"),
     make_option(c("-n", "--sample.size"), action = "store", default = 5e3, type = 'numeric',
-                help = "total sample size")
+                help = "total sample size")  
   )
   opt <- parse_args(OptionParser(option_list = option_list))
   
